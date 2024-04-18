@@ -16,7 +16,12 @@
 * {
     font-family: "Orbitron", sans-serif;
 }
-
+html {
+    overflow-x: hidden;
+}
+.container {
+    overflow-x: hidden;
+}
 body {
     background: rgb(202,117,223);
 background: radial-gradient(circle, rgba(202,117,223,1) -50%, rgba(23,16,65,1) 22%);
@@ -127,6 +132,7 @@ background: radial-gradient(circle, rgba(202,117,223,1) -50%, rgba(23,16,65,1) 2
     margin: 0 auto;
     margin-bottom: 5rem;
     position: relative;
+    overflow: hidden;
 }
 .about-block p span {
     background: linear-gradient(90deg, rgba(145,115,209,1) 0%, rgba(220,110,179,1) 100%);
@@ -202,4 +208,14 @@ background: radial-gradient(circle, rgba(202,117,223,1) -50%, rgba(23,16,65,1) 2
 .btn-invite {
     padding: 10px 18px;
     font-size: 18px;
+}
+.light-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
 }
